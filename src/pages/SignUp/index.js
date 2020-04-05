@@ -12,13 +12,20 @@ import {
   SignLinkText,
 } from './styles';
 
-export default function SignIn({navigation}) {
+export default function SignUp({navigation}) {
   return (
     <Background>
       <Container>
         <Image source={logo} />
 
         <Form>
+          <FormInput
+            icon="person-outline"
+            autoCorrect={false}
+            autoCapitaliz="none"
+            placeholder="Nome completo"
+          />
+
           <FormInput
             icon="mail-outline"
             keyboardType="email-address"

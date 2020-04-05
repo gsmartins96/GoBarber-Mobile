@@ -2,7 +2,7 @@ import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import SignIn from './pages/SignIn';
-import SignOut from './pages/SignOut';
+import SignUp from './pages/SignUp';
 
 const Stack = createStackNavigator();
 
@@ -13,7 +13,7 @@ export default function Routes() {
         headerShown: false,
       }}>
       <Stack.Screen name="SignIn" component={SignIn} />
-      <Stack.Screen name="SignOut" component={SignOut} />
+      <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
   );
 }
